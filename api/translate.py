@@ -31,9 +31,6 @@ def translate():
         "Origin": "https://app.laratranslate.com"
     }
 
-    try:
-        response = requests.post(LARA_API, json=payload, headers=headers)
-        print (response.text)
-        return jsonify(response.json())
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    response = requests.post(LARA_API, json=payload, headers=headers)
+    print (response.text)
+    return jsonify(response.json())
