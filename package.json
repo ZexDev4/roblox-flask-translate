@@ -1,0 +1,9 @@
+{
+  "name": "laratranslate-proxy",
+  "version": "1.0.0",
+  "main": "api/translate.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.4.1"
+  }
+}
